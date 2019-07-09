@@ -2,15 +2,15 @@ sudo: false
 language: node_js
 dist: trusty
 node_js:
- - “10”
+  - "10"
 
 cache:
- directories:
- - “$HOME/.npm”
+  directories:
+  - "$HOME/.npm"
 
 branches:
- only:
- - master
+  only:
+  - master
 
 before_install:
 - sudo apt-get update
@@ -18,9 +18,9 @@ before_install:
 
 install:
 - npm install
-- echo “npm test temporarily disabled”
+- echo "npm test temporarily disabled"
 
-script: ‘true’
+script: 'true'
 
 after_success:
-- echo “Oh hey! This build works!”
+- echo "Oh hey! This build works !"
